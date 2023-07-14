@@ -1,0 +1,317 @@
+@media only screen and (min-width: 1024px) {
+    /*deskop*/
+}
+
+@media screen and (min-width: 767px) and (max-width:1023px) {
+    /*tablet*/
+
+    .bg {
+        display: none;
+    }
+
+    .logo img {
+        top: auto;
+        height: 75px;
+        margin-right: 6px;
+    }
+
+    .bdgcategory {
+        margin: 80px 200px;
+    }
+
+    .quote {
+        margin: 80px 30px;
+        gap: 20px;
+    }
+
+    .quote img {
+        display: flex;
+        width: 50px;
+    }
+
+    .quote p {
+        font-size: 12px;
+    }
+
+    .termsheader {
+        margin: 80px 5px;
+    }
+
+    .termsheader h1 {
+        font-size: 17px;
+    }
+
+    .termsheader p {
+        font-size: 12px;
+    }
+
+    .termsheader li {
+        font-size: 12px;
+    }
+
+    .termsheader li span {
+        font-size: 12px;
+    }
+
+    .importantquote {
+        margin: 80px 30px;
+    }
+
+    .importantquote img {
+        display: flex;
+        width: 50px;
+    }
+
+    .importantquote p {
+        font-size: 12px;
+    }
+
+    .informationquote img {
+        display: flex;
+        width: 35px;
+    }
+
+    .informationquote p {
+        font-size: 10px;
+    }
+
+    .markedtext {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /*smartphone*/
+
+    .bg {
+        display: none;
+    }
+
+    .logo img {
+        top: auto;
+        height: 50px;
+        margin-right: 6px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 10px;
+    }
+
+    .items p {
+        font-size: 15px;
+    }
+
+    .cercle {
+        width: 150px;
+    }
+
+    .items span {
+        font-size: 13px;
+    }
+
+    .footer-left {
+        display: none;
+    }
+
+    .footer h1 {
+        font-size: 13px;
+    }
+
+    .footer a {
+        font-size: 11px;
+        margin: 0 0 2px 0;
+    }
+
+    .footer-right img {
+        width: 10px;
+        height: auto;
+        margin: 0 5px 0 0;
+    }
+
+    .bdgcategory {
+        margin: 50px 50px;
+    }
+
+    .badges h1 {
+        font-size: 15px;
+    }
+
+    .bdgcard img {
+        display: flex;
+        width: 75px;
+    }
+
+    .bdgcard p {
+        font-size: 12px;
+    }
+
+    .bdgtitle {
+        font-size: 20px;
+    }
+
+    .quote {
+        margin: 80px 30px;
+        gap: 20px;
+    }
+
+    .quote img {
+        display: flex;
+        width: 50px;
+    }
+
+    .quote p {
+        font-size: 12px;
+    }
+
+    .termsheader {
+        margin: 80px 5px;
+    }
+
+    .termsheader h1 {
+        font-size: 17px;
+    }
+
+    .termsheader p {
+        font-size: 12px;
+    }
+
+    .termsheader li {
+        font-size: 12px;
+    }
+
+    .termsheader li span {
+        font-size: 12px;
+    }
+
+    .importantquote {
+        margin: 80px 30px;
+    }
+
+    .importantquote img {
+        display: flex;
+        width: 50px;
+    }
+
+    .importantquote p {
+        font-size: 12px;
+    }
+
+    .informationquote img {
+        display: flex;
+        width: 35px;
+    }
+
+    .informationquote p {
+        font-size: 10px;
+    }
+
+    .markedtext {
+        font-size: 10px;
+    }
+
+    .team h1 {
+        font-size: 15px;
+    }
+
+    .team-cercle {
+        width: 160px;
+        padding: 20px 30px;
+    }
+
+    .team-cercle h1 {
+        font-size: 15px;
+    }
+
+    .team-cercle img {
+        width: 55px;
+    }
+
+    .team-cercle span {
+        font-size: 10px;
+    }
+
+    .teambutton {
+        margin: 8px;
+        width: 55px;
+    }
+
+    .teamwebsite {
+        font-size: 10px;
+    }
+
+    .team-link {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    /*navbar*/
+
+    #hamburger {
+        display: block;
+        color: var(--text-color);
+    }
+
+    .navcontainer {
+        padding: 1.2rem;
+    }
+
+    .menu {
+        position: absolute;
+        top: 87px;
+        width: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0.97) translateX(-5px);
+        transition: all 500ms ease;
+    }
+
+    .menu-bar .nav-link {
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0.97) translateX(-5px);
+        transition: all 500ms ease;
+    }
+
+    .menu.show {
+        background-color: var(--light-black);
+        width: 85px;
+        border-radius: 10px;
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1) translateX(5px);
+    }
+
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1rem;
+    }
+
+    .menu-bar .nav-link {
+        display: flex;
+        justify-content: space-between;
+        width: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: poppins;
+        margin: 0;
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1) translateX(5px);
+    }
+
+    .menu-bar li:first-child .dropdown {
+        min-width: 100%;
+    }
+
+    .menu-bar>li:not(:last-child) {
+        padding-bottom: 0.5rem;
+    }
+}
