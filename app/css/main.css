@@ -26,9 +26,6 @@
     --black-color: #111;
     --light-black: #15151a;
     --blue-color: #0077b6;
-    --green-color: #059669;
-    --yellow-color: #D97706;
-    --red-color: #801C1C;
 }
 
 * {
@@ -50,6 +47,18 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--grey-color);
+}
+
+.text:hover {
+    cursor: default;
+    -moz-user-select: none;
+    /* Firefox */
+    -webkit-user-select: none;
+    /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none;
+    /* Internet explorer depuis la version 10 et Edge */
+    user-select: none;
+    /* Propriété standard */
 }
 
 header ul {
@@ -80,7 +89,12 @@ button {
 }
 
 .logo {
-    margin-right: 1.5rem;
+    margin: 1.5rem;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 100%;
 }
 
 .navcontainer {
@@ -163,8 +177,9 @@ header {
 }
 
 .footerlogo img {
-    width: 115px;
+    width: 75px;
     height: auto;
+    border-radius: 100%;
 }
 
 .footer h1 {
