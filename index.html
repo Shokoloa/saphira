@@ -25,180 +25,116 @@
         content="https://cdn.discordapp.com/avatars/968752770679197796/18202d53467a16a27c22bfbe3e8327c5.png">
 
     <link href="app/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="app/css/bg.css" rel="stylesheet" type="text/css" />
     <link href="app/css/medias.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="app/images/website-logo.png">
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/6e61d25d8a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
-    <div class="bg">
-        <div class="z-3">
-            <div class="tile top-left animate-opacity freq-5"></div>
-            <div class="tile top-right animate-opacity freq-9"></div>
-            <div class="tile bottom-left animate-opacity freq-7"></div>
-            <div class="tile bottom-right animate-opacity freq-10"></div>
-        </div>
-        <div class="z-2">
-            <div class="tile top-left animate-opacity freq-9 delay-2"></div>
-            <div class="tile top-right animate-opacity freq-5 delay-2"></div>
-            <div class="tile bottom-left animate-opacity freq-6 delay-4"></div>
-            <div class="tile bottom-right animate-opacity freq-10 delay-4"></div>
-        </div>
-        <div class="z-1">
-            <div class="tile top-left animate-opacity freq-7 delay-2"></div>
-            <div class="tile top-right animate-opacity freq-5 delay-4"></div>
-            <div class="tile bottom-left animate-opacity freq-9 delay-2"></div>
-            <div class="tile bottom-right animate-opacity freq-5 delay"></div>
-        </div>
-    </div>
+<body class="text transition">
+    <div class="bg"></div>
+
     <header id="nav-menu" aria-label="navigation bar">
-        <a class="logo" href="/">
-            <img src="app/images/website-logo.png" draggable="false">
+        <a onclick="window.location.href = '/'" class="logo">
+            <img src="app/images/website-logo.png" draggable={false} alt="Logo" />
         </a>
-        <div class="navcontainer">
-            <div class="nav-start">
+        <section class="navcontainer">
+            <article class="nav-start">
                 <nav class="menu">
                     <ul class="menu-bar">
-                        <li><a class="nav-link" href="/">Acceuil</a></li>
-                        <li><a class="nav-link" href="support">Support</a></li>
-                        <li><a class="nav-link" href="#">Docs</a></li>
-                        <li><a class="nav-link" href="#">Équipe</a></li>
+                        <li><a onclick="window.location.href = '/'" class="nav-link">Accueil</a></li>
+                        <li><a onclick="window.location.href = 'team'" class="nav-link">Équipe</a></li>
                     </ul>
                 </nav>
-            </div>
-
-            <div class="nav-end">
-                <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-                    <i class="bx bx-menu" aria-hidden="true"></i>
-                </button>
-            </div>
-        </div>
+            </article>
+            <label class="nav-end">
+                <input type="checkbox" id="hamburger" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </section>
+        <section class="nav-rightfield">
+            <button class="nav-support" onclick="window.open('support')"><i class="fa-brands fa-discord"></i></button>
+            <button class="nav-addbot" onclick="window.open('invite')">Ajouter Saphira</button>
+        </section>
     </header>
 
-
-    <div class="hero">
-        <h1 class="text">Saphira</h1>
-        <p class="quotes text">Lorem Ipsum Dolor Sit</p>
-        <p class="quotes text">Lorem Ipsum Dolor Sit</p>
-        <p class="quotes text">Lorem Ipsum Dolor Sit</p>
-        <p class="quotes text">Lorem Ipsum Dolor Sit</p>
-        <p class="quotes text">Lorem Ipsum Dolor Sit</p>
-        <p class="quotes text">Lorem Ipsum Dolor Sit</p>
-        <a id="inviteme" style="margin-bottom:10px;" class="custombutton" role="button">
-            Inviter Saphira
-            <i style="margin-top:15px;" class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div class="stats text">
-        <h1>Statistiques</h1>
-        <div class="cards">
-            <div class="items">
-                <div class="cercle">
-                    <span>75</span>
-                    <p>Serveurs</p>
-                </div>
-            </div>
-            <div class="items">
-                <div class="cercle">
-                    <span>70k+</span>
-                    <p>Utilisateurs</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <main>
+        <section class="hero">
+            <section class="hero-left">
+                <article class="hero-titlesection">
+                    <h1 class="hero-title">Saphira</h1>
+                    <span>|</span>
+                    <p class="hero-title-alt" id="hero_subtitle"></p>
+                </article>
+                <button class="invitebutton" onclick="window.location.href = 'invite'">Inviter Saphira</button>
+                <article class="stats">
+                    <article>
+                        <h6>0</h6>
+                        <p>Serveurs</p>
+                    </article>
+                    <article>
+                        <h6>0</h6>
+                        <p>Utilisateurs</p>
+                    </article>
+                </article>
+            </section>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="footer-left">
-            <div class="footerlogo">
-                <a href="/">
-                    <img src="app/images/website-logo.png" draggable="false">
-                </a>
-            </div>
-            <div class="footertext text">
-                <p>Utilitaire, Bump & Fun</p>
-                <p>Saphira © 2023 Tous Droits Réservés.</p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <div class="ressources">
-                <h1 class="text">Autre</h1>
-                <div class="footerlinks">
-                    <a href="badges">
-                        <img src="app/images/badges.png" draggable="false">
-                        <p>Badges</p>
-                    </a>
-                    <a href="#">
-                        <img src="" draggable="false">
-                        <p>Équipe</p>
-                    </a>
-                    <a>
-                        <p>&nbsp</p>
-                    </a>
+        <section class="footer-left">
+            <img src="app/images/website-logo.png" draggable="false" alt="">
+            <p>N'attend plus, propulse ton serveur<br>Discord avec Saphira !</p>
+            <article class="footer-socials">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </article>
+        </section>
+        <section class="footer-center">
+            <p>Saphira © 2023 Tous droits réservés.</p>
+        </section>
+        <section class="footer-right">
+            <article class="footer-field">
+                <h6>Ressources</h6>
+                <div class="footer-articles">
+                    <a onclick="window.open('')">Documentation</a>
+                    <a onclick="window.open('')">Statut</a>
                 </div>
-            </div>
-            <div class="legal">
-                <h1 class="text">Légal</h1>
-                <div class="footerlinks">
-                    <a href="terms">
-                        <img src="app/images/tos.png" draggable="false">
-                        <p>Conditions d'Utilisation</p>
-                    </a>
-                    <a href="privacy">
-                        <img src="app/images/privacy.png" draggable="false">
-                        <p>Politique de Confidentialité</p>
-                    </a>
-                    <a>
-                        <p>&nbsp</p>
-                    </a>
+            </article>
+            <article class="footer-field">
+                <h6>Chartes</h6>
+                <div class="footer-articles">
+                    <a onclick="window.location.href = 'cgu'">Conditions Générales d'Utilisation</a>
+                    <a onclick="window.location.href = 'policy'">Politique de Confidentialité</a>
                 </div>
-            </div>
-            <div class="socials">
-                <h1 class="text">Réseaux</h1>
-                <div class="footerlinks">
-                    <a href="https://www.tiktok.com/@saphirabot">
-                        <img src="app/images/tiktok.png" draggable="false">
-                        <p>Tiktok</p>
-                    </a>
-                    <a href="support">
-                        <img src="app/images/discord.png" draggable="false">
-                        <p>Discord</p>
-                    </a>
-                    <a>
-                        <p>&nbsp</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+            </article>
+        </section>
     </footer>
 </body>
-<script>
-    let inviteme = document.getElementById('inviteme');
-
-    inviteme.addEventListener('click', function () {
-        window.location.href = 'invite';
-    });
-
-    (function () {
-
-        var quotes = $(".quotes");
-        var quoteIndex = -1;
-
-        function showNextQuote() {
-            ++quoteIndex;
-            quotes.eq(quoteIndex % quotes.length)
-                .fadeIn(2000)
-                .delay(2000)
-                .fadeOut(2000, showNextQuote);
-        }
-
-        showNextQuote();
-    })();
-</script>
 <script src="app/js/navbar.js"></script>
+<script>
+    var textElement = document.getElementById("hero_subtitle");
+    var texts = ["Bump", "Utilitaire", "Fun"];
+    var currentIndex = 0;
+
+    function changeTextAndAnimate() {
+        textElement.style.opacity = "0";
+
+        setTimeout(function () {
+            textElement.textContent = texts[currentIndex];
+
+            textElement.style.opacity = "1";
+        }, 1100);
+
+        currentIndex = (currentIndex + 1) % texts.length;
+    }
+
+    changeTextAndAnimate();
+
+    setInterval(changeTextAndAnimate, 5000);
+</script>
 
 </html>
