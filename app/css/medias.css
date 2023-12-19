@@ -5,74 +5,17 @@
 @media screen and (min-width: 767px) and (max-width:1023px) {
     /*tablet*/
 
-    .logo img {
-        top: auto;
-        height: 75px;
-        margin-right: 6px;
+    .nav-lastlink {
+        display: none;
     }
 
-    .bdgcategory {
-        margin: 80px 200px;
+    .hero-left {
+        margin: 0 0 0 0;
+        padding: 0 20px 0 0;
     }
 
-    .quote {
-        margin: 80px 30px;
-        gap: 20px;
-    }
-
-    .quote img {
-        display: flex;
-        width: 50px;
-    }
-
-    .quote p {
-        font-size: 12px;
-    }
-
-    .termsheader {
-        margin: 80px 5px;
-    }
-
-    .termsheader h1 {
-        font-size: 17px;
-    }
-
-    .termsheader p {
-        font-size: 12px;
-    }
-
-    .termsheader li {
-        font-size: 12px;
-    }
-
-    .termsheader li span {
-        font-size: 12px;
-    }
-
-    .importantquote {
-        margin: 80px 30px;
-    }
-
-    .importantquote img {
-        display: flex;
-        width: 50px;
-    }
-
-    .importantquote p {
-        font-size: 12px;
-    }
-
-    .informationquote img {
-        display: flex;
-        width: 35px;
-    }
-
-    .informationquote p {
-        font-size: 10px;
-    }
-
-    .markedtext {
-        font-size: 10px;
+    #slideshow .slide {
+        width: 450px;
     }
 }
 
@@ -80,163 +23,46 @@
     /*smartphone*/
 
     .logo img {
-        top: auto;
-        height: 50px;
-        margin-right: 6px;
-    }
-
-    .hero h1 {
-        font-size: 25px;
-    }
-
-    .hero p {
-        font-size: 10px;
-    }
-
-    .items p {
-        font-size: 15px;
-    }
-
-    .cercle {
-        width: 150px;
-    }
-
-    .items span {
-        font-size: 13px;
-    }
-
-    .footer-left {
-        display: none;
-    }
-
-    .footer h1 {
-        font-size: 13px;
-    }
-
-    .footer a {
-        font-size: 11px;
-        margin: 0 0 2px 0;
-    }
-
-    .footer-right img {
-        width: 10px;
-        height: auto;
-        margin: 0 5px 0 0;
-    }
-
-    .bdgcategory {
-        margin: 50px 50px;
-    }
-
-    .badges h1 {
-        font-size: 15px;
-    }
-
-    .bdgcard img {
-        display: flex;
         width: 75px;
     }
 
-    .bdgcard p {
-        font-size: 12px;
+    .nav-lastlink {
+        display: none;
     }
 
-    .bdgtitle {
-        font-size: 20px;
+    .footer {
+        padding: 10px 50px 50px 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
-    .quote {
-        margin: 80px 30px;
-        gap: 20px;
+    .footer-left p {
+        text-align: center;
+        font-size: 13px;
     }
 
-    .quote img {
+    .footer-left p img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-right {
         display: flex;
-        width: 50px;
+        flex-direction: row;
     }
 
-    .quote p {
-        font-size: 12px;
-    }
-
-    .termsheader {
-        margin: 80px 5px;
-    }
-
-    .termsheader h1 {
-        font-size: 17px;
-    }
-
-    .termsheader p {
-        font-size: 12px;
-    }
-
-    .termsheader li {
-        font-size: 12px;
-    }
-
-    .termsheader li span {
-        font-size: 12px;
-    }
-
-    .importantquote {
-        margin: 80px 30px;
-    }
-
-    .importantquote img {
-        display: flex;
-        width: 50px;
-    }
-
-    .importantquote p {
-        font-size: 12px;
-    }
-
-    .informationquote img {
-        display: flex;
-        width: 35px;
-    }
-
-    .informationquote p {
-        font-size: 10px;
-    }
-
-    .markedtext {
-        font-size: 10px;
-    }
-
-    .team h1 {
+    .footer h6 {
         font-size: 15px;
     }
 
-    .team-cercle {
-        width: 160px;
-        padding: 20px 30px;
+    .footer-element,
+    .footer-element {
+        margin: 10 15px;
     }
 
-    .team-cercle h1 {
-        font-size: 15px;
-    }
-
-    .team-cercle img {
-        width: 55px;
-    }
-
-    .team-cercle span {
-        font-size: 10px;
-    }
-
-    .teambutton {
-        margin: 8px;
-        width: 55px;
-    }
-
-    .teamwebsite {
-        font-size: 10px;
-    }
-
-    .team-link {
-        font-size: 10px;
+    .footer-right a {
+        font-size: 13px;
     }
 }
 
